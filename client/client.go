@@ -14,7 +14,7 @@ const (
 
 func main() {
 	//TLS连接
-	creds, err := credentials.NewClientTLSFromFile("static/server.crt", "server name")
+	creds, err := credentials.NewClientTLSFromFile("static/po_server.crt", "po")
 	if err != nil {
 		log.Fatalf("Failed to create TLS credentials %v", err)
 	}

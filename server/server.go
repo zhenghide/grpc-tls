@@ -32,7 +32,7 @@ func main() {
 	}
 
 	//TLS认证
-	creds, err := credentials.NewServerTLSFromFile("static/server.crt", "static/server.key")
+	creds, err := credentials.NewServerTLSFromFile("static/po_server.crt", "static/po_server.key")
 	if err != nil {
 		log.Fatalf("failed to generate credentials %v", err)
 	}
